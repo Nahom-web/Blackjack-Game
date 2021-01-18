@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.00, maximum-scale=2.00, minimum-scale=1.00">
+    <title>Blackjack Game</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+          rel="stylesheet" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Lemonada&display=swap" rel="stylesheet">
+    <link href="styles/game.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+    <h1>BASKETBALL BLACKJACK!</h1>
+</header>
+<div class="aroundTopInfo">
+    <img src="images/metals/metal0.png" alt="metals moving" id="metal">
+<!--    https://www.needpix.com/photo/1815588/champion-gold-golden-award-winner-badge-victory-prize-honor-->
+    <p class="topInfo" id="moneyP">Bank: <span id="money"></span></p>
+    <p class="topInfo" id="usernameP"></p>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div id="dealer" class="col-12 col-md-6">
+            <h2>Dealer's Hand</h2>
+            <div class="cards" id="dealersCards"></div>
+            <p id="dealersHandP">Dealers Hand value: <span id="dealersHandValue"></span></p>
+        </div>
+        <div id="player" class="col-12 col-md-6">
+            <h2>Players Hand</h2>
+            <div class="cards" id="playersCards"></div>
+            <p id="playersHandP">Player's Hand Value: <span id="playersHandValue"></span></p>
+        </div>
+    </div>
+    <div class="grid-container">
+        <div id="grid-item1">
+            <p id="name"></p>
+            <p id="pNum"></p>
+        </div>
+        <div id="grid-item2">
+            <p id="winningHand"></p>
+        </div>
+        <div id="grid-item3">
+            <p id="city"></p>
+            <p id="email"></p>
+        </div>
+    </div>
+    <div class="betBox">
+        <input type="text" placeholder="ENTER BET" id="betInput">
+    </div>
+    <div class="errorBox">
+        <span id="errorMessage"></span>
+    </div>
+    <div class="playButtons">
+        <button id="play" class="buttons">PLAY</button>
+        <button id="hitMe" class="buttons">HIT ME</button>
+        <button id="stay" class="buttons">STAY</button>
+        <button id="quit" class="buttons">Quit</button>
+    </div>
+    <footer id="hereBefore">
+        <p id="usernameAndName"></p>
+        <p id="pNumAndCity"></p>
+        <p id="bank"></p>
+        <p id="lastVisit"></p>
+        <p id="credsP"><span id="creds"></span><a id="notUser" href="intro.html"> Change your credentials</a></p>
+    </footer>
+</div>
+<script src="js/animation.js"></script>
+<script src="js/game.js"></script>
+<script src="js/test.js"></script>
+</body>
+</html>

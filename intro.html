@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.00, maximum-scale=2.00, minimum-scale=1.00">
+    <title>Basketball Blackjack Intro</title>
+    <link href="styles/intro.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lemonada&display=swap" rel="stylesheet">
+</head>
+<body>
+<h1>BASKETBALL BLACKJACK</h1>
+<div id="aroundForm">
+    <form action="game.html" method="get" id="introForm" name="introForm">
+        <label for="firstName">First Name:</label>
+        <input name="firstName" type="text" id="firstName" placeholder="enter your name">
+        <span id="firstNameSpan"></span>
+        <label for="lastName">Last Name:</label>
+        <input name="lastName" type="text" id="lastName" placeholder="enter your last name">
+        <span id="lastNameSpan"></span>
+        <label for="username">Username:</label>
+        <input name="username" type="text" id="username" placeholder="enter your username">
+        <span id="usernameSpan"></span>
+        <label for="phone">Phone Number:</label>
+        <input name="phone" type="text" id="phone" placeholder="(###)-###-####">
+        <span id="pNumSpan"></span>
+        <label for="city">City:</label>
+        <input name="city" type="text" id="city" placeholder="enter a city">
+        <span id="citySpan"></span>
+        <label for="email">Email Address:</label>
+        <input name="email" type="email" id="email" placeholder="email@email.com">
+        <span id="emailSpan"></span>
+        <label for="money">Starting Money:</label>
+        <input name="money" id="money" type="text" placeholder="Starting Money">
+        <span id="moneySpan"></span>
+        <input id="submit" name="submit" type="submit" value="Submit">
+    </form>
+</div>
+<script src="js/intro.js"></script>
+</body>
+</html>

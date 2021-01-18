@@ -1,0 +1,189 @@
+/* CSS Document
+by Nahom Haile
+*/
+body{
+    background: black url("../images/basketball-orange.png") repeat-y center;
+    /*https://pixabay.com/vectors/basketball-ball-nba-sport-147794/*/
+    background-size: cover;
+    position: relative;
+}
+header{
+    background: black;
+    height: 50px;
+}
+header h1{
+    text-align: center;
+    font-family: 'Lemonada', cursive;
+    color: white;
+    font-size: 25px;
+}
+div.aroundTopInfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#metal{
+    position: absolute;
+    top: 5px;
+    left: 1px;
+    height: 48px;
+}
+p.topInfo{
+    font-size: 20px;
+    margin: 1px 0;
+    font-weight: bold;
+    color: white;
+}
+#moneyP{
+    text-align: left;
+}
+#usernameP{
+    text-align: right;
+}
+#dealer, #player{
+    text-align: center;
+    border: 3px solid blue;
+    color: white;
+}
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    text-align: center;
+}
+.cards img{
+    width: 70%;
+    padding-bottom: 10px;
+}
+#dealersHandP, #playersHandP{
+    font-size: 20px;
+}
+#dealersCards, #playersCards{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+#dealersHandValue, #playersHandValue{
+    font-weight: bold;
+}
+#grid-item1, #grid-item3{
+    display: none;
+}
+#grid-item2{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+#winningHand{
+    font-size: 23px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    transition: width 2s, height 2s, transform 2s;
+}
+#winningHand:hover{
+    transform: rotate(360deg);
+}
+.betBox{
+    text-align: center;
+}
+#betInput{
+    text-align: center;
+    width: 40%;
+    height: 30px;
+    padding: 2px;
+    font-size: 15px;
+}
+div.errorBox{
+    text-align: center;
+    margin-top: 10px;
+}
+#errorMessage{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 2px;
+    margin-top: -20px;
+}
+.playButtons{
+    padding: 2px;
+    text-align: center;
+    margin-top: 10px;
+}
+.buttons{
+    width: 50%;
+    height: 34px;
+    background-color: white;
+    color: black;
+}
+#hereBefore{
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+@media all and (min-width: 768px) {
+    header{
+        height: 55px;
+    }
+    header h1{
+        font-size: 50px;
+    }
+    .grid-container p{
+        font-size: 20px;
+        margin: 1px 0;
+        font-weight: bold;
+        color: white;
+    }
+    #hitMe, #stay, #play, #quit{
+        width: 10%;
+        margin-top: -20px;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        text-align: center;
+    }
+    .cards img{
+        width: 60%;
+    }
+    .backCard{
+        width: 40%;
+    }
+    #dealersHandP, #playersHandP{
+        font-size: 20px;
+    }
+    #dealersCards, #playersCards{
+        font-size: 20px;
+    }
+    div.grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    div.grid-container #grid-item1{
+        display: inline;
+        text-align: left;
+    }
+    div.grid-container #grid-item2{
+        text-align: center;
+        width: 90%;
+    }
+    div.grid-container #grid-item3{
+        display: inline;
+        text-align: right;
+    }
+    #betInput{
+        width: 16%;
+    }
+    #errorMessage{
+        width: 50%;
+        font-size: 20px;
+    }
+    #winningHand{
+        font-size: 22px;
+    }
+    #hereBefore{
+        font-size: 18px;
+    }
+}

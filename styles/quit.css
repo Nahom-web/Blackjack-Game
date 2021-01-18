@@ -1,0 +1,26 @@
+/* CSS Document
+by Nahom Haile
+*/
+
+body {
+    background: url("../images/background.jpg") no-repeat;
+    /*https://pixabay.com/photos/balloon-sports-basketball-party-2578600/*/
+    background-size: 115em;
+    font-family: 'Lemonada', cursive;
+}
+div{
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    margin-top: 200px;
+}
+div p, a{
+    font-size: 24px;
+    font-weight: bolder;
+    color: black;
+}
+@media all and (min-width: 768px) {
+    div p, a{
+        font-size: 30px;
+    }
+}
